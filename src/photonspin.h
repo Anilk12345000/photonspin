@@ -10,6 +10,15 @@ struct photonspin64_s {
   uint64_t c;
 };
 
+struct photonspin32_s {
+  uint32_t elements[20];
+  uint32_t a;
+  uint32_t b;
+  uint32_t c;
+};
+
 void photonspin64(struct photonspin64_s *s);
+
+void photonspin32(struct photonspin32_s *s);
 
 #endif
