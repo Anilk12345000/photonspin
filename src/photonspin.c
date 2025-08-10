@@ -31,10 +31,10 @@ void photonspin64(struct photonspin64_s *s) {
       s->elements[k - 1] == s->elements[k - 2] &&
       s->elements[k - 3] == s->elements[k - 4]
     ) {
-      s->elements[k - 1] += mix[i] ^ (111111111 + 0x111111111ULL);
-      s->elements[k - 2] += mix[i] ^ (1111111111111ULL + 0x1111111111111ULL);
-      s->elements[k - 3] += mix[i] ^ (11111111 + 0x11111111) | (mix[i] & 1);
-      s->elements[k - 4] += mix[i] ^ (11111111111111ULL + 0x11111111111111ULL);
+      s->elements[k - 1] += mix[i] ^ 4692409560ULL;
+      s->elements[k - 2] += mix[i] ^ 301351086269144ULL;
+      s->elements[k - 3] += (mix[i] ^ 297442264) | (mix[i] & 1);
+      s->elements[k - 4] += mix[i] ^ 4814950713639640ULL;
       s->elements[k - 5] += mix[i];
     }
 
@@ -78,10 +78,10 @@ void photonspin32(struct photonspin32_s *s) {
       s->elements[k - 1] == s->elements[k - 2] &&
       s->elements[k - 3] == s->elements[k - 4]
     ) {
-      s->elements[k - 1] += mix[i] ^ (11111 + 0x11111);
-      s->elements[k - 2] += mix[i] ^ (11111111 + 0x11111111);
-      s->elements[k - 3] += mix[i] ^ (1111 + 0x1111) | (mix[i] & 1);
-      s->elements[k - 4] += mix[i] ^ (1111111 + 0x1111111);
+      s->elements[k - 1] += mix[i] ^ 81016;
+      s->elements[k - 2] += mix[i] ^ 297442264;
+      s->elements[k - 3] += (mix[i] ^ 5480) | (mix[i] & 1);
+      s->elements[k - 4] += mix[i] ^ 19006808;
       s->elements[k - 5] += mix[i];
     }
 

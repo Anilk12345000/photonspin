@@ -2,7 +2,7 @@
 
 ---
 
-![PhotonSpin](https://repository-images.githubusercontent.com/1029423925/b6a67ec4-3b0b-40cd-abdc-605dc2f30790 "PhotonSpin")
+[![PhotonSpin](https://repository-images.githubusercontent.com/1029423925/b6a67ec4-3b0b-40cd-abdc-605dc2f30790 "PhotonSpin")](https://github.com/wstaffordp/photonspin/tree/master/src)
 
 ---
 
@@ -11,6 +11,8 @@ PhotonSpin is an extremely-fast, large-period, statistically-strong PRNG that ou
 The license is public domain. Anyone is free to use it for any purpose without restriction. It has no warranty.
 
 ---
+
+#### PhotonSpin64
 
 `photonspin64` is a PRNG function that generates 20 64-bit, pseudorandom, unsigned integers from 64-bit state integers.
 
@@ -29,6 +31,8 @@ It passes `stdin64` PractRand tests.
 In conclusion, PhotonSpin64 provides enhanced parallelism, period and speed with similar statistical test results as an ideal alternative to SHISHUA and other PRNGs that output large amounts of state.
 
 ---
+
+#### PhotonSpin32
 
 `photonspin32` is a PRNG function that generates 20 32-bit, pseudorandom, unsigned integers from 32-bit state integers.
 
